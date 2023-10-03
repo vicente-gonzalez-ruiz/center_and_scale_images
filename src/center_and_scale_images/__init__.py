@@ -20,7 +20,7 @@ def center_image(img, output_width=100, output_height=100, padding=10):
 
   # Create a new image with 10px padding on all sides and center the resized image within it
   if len(img.shape) > 2:
-    padded_img = np.zeros((output_height, output_width, channels), dtype=np.uint8)
+    padded_img = np.zeros((output_height, output_width, img.shape[2]), dtype=np.uint8)
   else:
     padded_img = np.zeros((output_height, output_width), dtype=np.uint8)
   padding_top = (output_height - new_height) // 2
