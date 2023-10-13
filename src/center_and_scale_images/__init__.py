@@ -27,6 +27,6 @@ def center_image(img, output_width=100, output_height=100, padding=10):
   padding_left = (output_width - new_width) // 2
   padded_img[padding_top:padding_top+new_height, padding_left:padding_left+new_width] = resized_img
 
-  info = f"center_and_scale\t{img.shape[1]} {output_width} {output_height} {padding} # output_width output_height padding"
+  info = f"center_and_scale\t{output_width} {output_height} {padding} # output_width output_height padding"
   
   return padded_img, info
