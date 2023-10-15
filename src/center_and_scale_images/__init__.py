@@ -17,8 +17,9 @@ def center_and_scale_image_in_canvas(
 
   # Calculate the scaling factor needed to fit the image within a
   # 100x100 frame with 10px padding
-  max_size = canvas_width - 2*image_padding_in_canvas
-  scale = min(max_size / image_height, max_size / image_width)
+  max_size_width = canvas_width - 2*image_padding_in_canvas
+  max_size_height = canvas_height - 2*image_padding_in_canvas
+  scale = min(max_size_height / image_height, max_size_width / image_width)
 
   # Calculate the new dimensions of the image
   resized_image_height = int(scale * image_height)
