@@ -40,7 +40,7 @@ def center_and_scale_image_in_canvas(
                x_coordinate_resized_image_in_canvas:xx_coordinate_resized_image_in_canvas]
   roi[:resized_image_height, :resized_image_width] = resized_img
 
-  info = "\"center_and_scale_image_in_canvas\" "
+  info = "\"center_and_scale_image_in_canvas\"\t"
   info += f"original_image_height={image_width}\t"
   info += f"original_image_height={image_height}\t"
   info += f"canvas_width={canvas_width}\t"
