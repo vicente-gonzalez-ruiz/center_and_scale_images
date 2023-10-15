@@ -36,6 +36,10 @@ def center_and_scale_image_in_canvas(
   x_coordinate_resized_image_in_canvas = (canvas_width - resized_image_width) // 2
   yy_coordinate_resized_image_in_canvas = y_coordinate_resized_image_in_canvas + resized_image_height
   xx_coordinate_resized_image_in_canvas = x_coordinate_resized_image_in_canvas + resized_image_width
+  print(x_coordinate_resized_image_in_canvas,
+        y_coordinate_resized_image_in_canvas,
+        xx_coordinate_resized_image_in_canvas,
+        yy_coordinate_resized_image_in_canvas)
   roi = canvas[y_coordinate_resized_image_in_canvas:yy_coordinate_resized_image_in_canvas,
                x_coordinate_resized_image_in_canvas:xx_coordinate_resized_image_in_canvas] = resized_img
   #roi[:resized_image_height, :resized_image_width] = resized_img
