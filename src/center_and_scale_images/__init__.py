@@ -94,7 +94,7 @@ def insert_WOI_in_canvas(
   info += f"WOI_xx_coordinate={WOI_xx_coordinate}\t"
   info += f"WOI_yy_coordinate={WOI_yy_coordinate}"
   
-  return updated_canvas, info
+  return canvas, info
 
 def scale_image(
     image,
