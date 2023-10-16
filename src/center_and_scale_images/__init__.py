@@ -84,8 +84,8 @@ def insert_WOI_in_canvas(
     WOI_x_coordinate=0, WOI_y_coordinate=0,
     WOI_xx_coordinate=140, WOI_yy_coordinate=110):
 
-  updated_canvas = WOI[WOI_y_coordinate_in:WOI_yy_coordinate,
-                       WOI_x_coordinate_in:WOI_xx_coordinate] + canvas
+  updated_canvas = WOI[WOI_y_coordinate:WOI_yy_coordinate,
+                       WOI_x_coordinate:WOI_xx_coordinate] + canvas
 
 
   info = "insert_WOI_in_canvas\t"
