@@ -83,10 +83,10 @@ def insert_WOI_in_canvas(
     WOI, canvas,
     WOI_x_coordinate=0, WOI_y_coordinate=0,
     WOI_xx_coordinate=140, WOI_yy_coordinate=110):
+  print(WOI_x_coordinate, WOI_y_coordinate, WOI_xx_coordinate, WOI_yy_coordinate)
 
-  updated_canvas = WOI[WOI_y_coordinate:WOI_yy_coordinate,
-                       WOI_x_coordinate:WOI_xx_coordinate] + canvas
-
+  canvas[WOI_y_coordinate:WOI_yy_coordinate,
+         WOI_x_coordinate:WOI_xx_coordinate] += WOI
 
   info = "insert_WOI_in_canvas\t"
   info += f"WOI_x_coordinate={WOI_x_coordinate}\t"
