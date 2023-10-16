@@ -49,7 +49,7 @@ def center_and_scale_image_in_canvas(
                x_coordinate_resized_image_in_canvas:xx_coordinate_resized_image_in_canvas] = resized_img
   #roi[:resized_image_height, :resized_image_width] = resized_img
 
-  info = "\"center_and_scale_image_in_canvas\"\t"
+  info = "center_and_scale_image_in_canvas\t"
   info += f"original_image_height={image_width}\t"
   info += f"original_image_height={image_height}\t"
   info += f"canvas_width={canvas_width}\t"
@@ -71,7 +71,7 @@ def extract_WOI(
   WOI = image[WOI_y_coordinate:WOI_yy_coordinate,
               WOI_x_coordinate:WOI_xx_coordinate]
 
-  info = "\"extract_WOI\" "
+  info = "extract_WOI\t"
   info += f"WOI_x_coordinate={WOI_x_coordinate}\t"
   info += f"WOI_y_coordinate={WOI_y_coordinate}\t"
   info += f"WOI_xx_coordinate={WOI_xx_coordinate}\t"
@@ -88,7 +88,7 @@ def insert_WOI_in_canvas(
                        WOI_x_coordinate_in:WOI_xx_coordinate] + canvas
 
 
-  info = "\"insert_WOI_in_canvas\" "
+  info = "insert_WOI_in_canvas\t"
   info += f"WOI_x_coordinate={WOI_x_coordinate}\t"
   info += f"WOI_y_coordinate={WOI_y_coordinate}\t"
   info += f"WOI_xx_coordinate={WOI_xx_coordinate}\t"
@@ -106,7 +106,7 @@ def scale_image(
   resized_image_height = int(image_height * scale)
   scaled_image = cv2.resize(image, (resized_image_width, resized_image_height))
 
-  info = "\"scale_image\" "
+  info = "scale_image\t"
   info += f"scale={scale}\t"
   info += f"resized_image_width={resized_image_width}\t"
   info += f"resized_image_height={resized_image_height}\t"
