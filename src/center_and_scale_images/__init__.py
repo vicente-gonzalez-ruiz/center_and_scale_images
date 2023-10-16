@@ -59,7 +59,7 @@ def center_and_scale_image_in_canvas(
   info += f"resized_image_width={resized_image_width}\t"
   info += f"resized_image_height={resized_image_height}\t"
   info += f"x_coordinate_resized_image_in_canvas={x_coordinate_resized_image_in_canvas}\t"
-  info += f"y_coordinate_resized_image_in_canvas={y_coordinate_resized_image_in_canvas}\t"
+  info += f"y_coordinate_resized_image_in_canvas={y_coordinate_resized_image_in_canvas}"
   
   return canvas, info
 
@@ -75,7 +75,7 @@ def extract_WOI(
   info += f"WOI_x_coordinate={WOI_x_coordinate}\t"
   info += f"WOI_y_coordinate={WOI_y_coordinate}\t"
   info += f"WOI_xx_coordinate={WOI_xx_coordinate}\t"
-  info += f"WOI_yy_coordinate={WOI_yy_coordinate}\t"
+  info += f"WOI_yy_coordinate={WOI_yy_coordinate}"
 
   return WOI, info
 
@@ -92,7 +92,7 @@ def insert_WOI_in_canvas(
   info += f"WOI_x_coordinate={WOI_x_coordinate}\t"
   info += f"WOI_y_coordinate={WOI_y_coordinate}\t"
   info += f"WOI_xx_coordinate={WOI_xx_coordinate}\t"
-  info += f"WOI_yy_coordinate={WOI_yy_coordinate}\t"
+  info += f"WOI_yy_coordinate={WOI_yy_coordinate}"
   
   return updated_canvas, info
 
@@ -109,7 +109,7 @@ def scale_image(
   info = "scale_image\t"
   info += f"scale={scale}\t"
   info += f"resized_image_width={resized_image_width}\t"
-  info += f"resized_image_height={resized_image_height}\t"
+  info += f"resized_image_height={resized_image_height}"
 
   return scaled_image, info
 
