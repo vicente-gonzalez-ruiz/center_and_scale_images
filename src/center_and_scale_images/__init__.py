@@ -37,14 +37,6 @@ def center_and_scale_image_in_canvas(
   x_coordinate_resized_image_in_canvas = (canvas_width - resized_image_width) // 2
   yy_coordinate_resized_image_in_canvas = y_coordinate_resized_image_in_canvas + resized_image_height
   xx_coordinate_resized_image_in_canvas = x_coordinate_resized_image_in_canvas + resized_image_width
-  print(
-    image_width, image_height,
-    canvas_width, canvas_height,
-    resized_image_width, resized_image_height,
-    x_coordinate_resized_image_in_canvas,
-    y_coordinate_resized_image_in_canvas,
-    xx_coordinate_resized_image_in_canvas,
-    yy_coordinate_resized_image_in_canvas)
   roi = canvas[y_coordinate_resized_image_in_canvas:yy_coordinate_resized_image_in_canvas,
                x_coordinate_resized_image_in_canvas:xx_coordinate_resized_image_in_canvas] = resized_img
   #roi[:resized_image_height, :resized_image_width] = resized_img
@@ -83,7 +75,6 @@ def insert_WOI_in_canvas(
     WOI, canvas,
     WOI_x_coordinate=0, WOI_y_coordinate=0,
     WOI_xx_coordinate=140, WOI_yy_coordinate=110):
-  print(WOI_x_coordinate, WOI_y_coordinate, WOI_xx_coordinate, WOI_yy_coordinate)
 
   canvas[WOI_y_coordinate:WOI_yy_coordinate,
          WOI_x_coordinate:WOI_xx_coordinate] += WOI
