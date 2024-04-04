@@ -4,7 +4,8 @@ import cv2
 def center_and_scale_image_in_canvas(
     image,
     canvas_width=160, canvas_height=120,
-    image_padding_in_canvas=10):
+    image_padding_in_canvas_y=20
+    image_padding_in_canvas_x=30):
   '''Create a new image with 10px padding on all sides and center the
   resized image within it.
 
@@ -17,8 +18,8 @@ def center_and_scale_image_in_canvas(
 
   # Calculate the scaling factor needed to fit the image within a
   # 100x100 frame with 10px padding
-  max_size_width = canvas_width - 2*image_padding_in_canvas
-  max_size_height = canvas_height - 2*image_padding_in_canvas
+  max_size_width = canvas_width - 2*image_padding_in_canvas_x
+  max_size_height = canvas_height - 2*image_padding_in_canvas_y
   scale = min(max_size_height / image_height, max_size_width / image_width)
 
   # Calculate the new dimensions of the image
@@ -46,7 +47,8 @@ def center_and_scale_image_in_canvas(
   info += f"original_image_height={image_height}\t"
   info += f"canvas_width={canvas_width}\t"
   info += f"canvas_height={canvas_height}\t"
-  info += f"image_padding_in_canvas={image_padding_in_canvas}\t"
+  info += f"image_padding_in_canvas_x={image_padding_in_canvas_x}\t"
+  info += f"image_padding_in_canvas_y={image_padding_in_canvas_y}\t"
   info += f"scale={scale}\t"
   info += f"resized_image_width={resized_image_width}\t"
   info += f"resized_image_height={resized_image_height}\t"
