@@ -4,7 +4,7 @@ import cv2
 def center_and_scale_image_in_canvas(
     image,
     canvas_width=160, canvas_height=120,
-    image_padding_in_canvas_y=20
+    image_padding_in_canvas_y=20,
     image_padding_in_canvas_x=30):
   '''Create a new image with 10px padding on all sides and center the
   resized image within it.
